@@ -1,2 +1,17 @@
 # PPT_Generator
-AI-powered skill for generating editable PowerPoint presentations from prompts, images, and structured content.
+
+一个简单的 PPT 生成项目示例。
+
+## 功能简介
+
+- 根据输入内容生成演示文稿结构
+- 支持后续扩展为自动化 PPT 生成流程
+
+## 使用方式
+
+1. 克隆仓库
+2. 根据项目代码进行本地开发或二次修改
+
+## 说明
+
+当前 README 为简版说明，后续可按功能完善详细文档。
