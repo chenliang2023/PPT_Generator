@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "runtimes": [
+    {
+      "id": "local",
+      "display_name": "本机工作区",
+      "kind": "local",
+      "status": "available",
+      "adapters": [
+        {
+          "id": "local-session",
+          "display_name": "本机会话",
+          "capabilities": [
+            "plan",
+            "research",
+            "execute",
+            "verify",
+            "review",
+            "integrate",
+            "interactive"
+          ],
+          "agent_ids": ["*"]
+        }
+      ]
+    }
+  ],
+  "routing": {
+    "defaults": {
+      "planning": null,
+      "research": null,
+      "execution": null,
+      "dispatch": null,
+      "verification": null,
+      "review": null,
+      "integration": null,
+      "release": null
+    },
+    "fallback": "capability_then_ask"
+  }
+}

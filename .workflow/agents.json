@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "agents": [
+    {
+      "id": "harness",
+      "display_name": "DeepSeek Harness",
+      "role": "architecture and security",
+      "cost_tier": "expensive",
+      "tags": ["architecture", "security", "core-domain-decision", "design-tradeoff"],
+      "description": "重推理，刀刃用，只接架构决策/安全敏感 ticket"
+    },
+    {
+      "id": "pi",
+      "display_name": "Pi",
+      "role": "general implementation",
+      "cost_tier": "medium",
+      "tags": [
+        "crud",
+        "service-layer",
+        "api-endpoint",
+        "scaffold",
+        "config",
+        "migration",
+        "verify",
+        "research",
+        "frontend-impl"
+      ],
+      "description": "覆盖最广的通用实现，也接验证与调研"
+    },
+    {
+      "id": "antigravity",
+      "display_name": "Google Antigravity",
+      "role": "frontend",
+      "cost_tier": "medium",
+      "tags": ["frontend-design", "frontend-impl", "ui", "interaction", "styling"],
+      "description": "前端/交互，UI 组件、动画、样式"
+    }
+  ]
+}
