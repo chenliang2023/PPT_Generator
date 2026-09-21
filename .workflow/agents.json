@@ -1,39 +1,72 @@
 {
-  "schema_version": 2,
+  "schema_version": 1,
   "agents": [
     {
-      "id": "harness",
-      "display_name": "DeepSeek Harness",
-      "role": "architecture and security",
-      "cost_tier": "expensive",
-      "tags": ["architecture", "security", "core-domain-decision", "design-tradeoff"],
-      "description": "重推理，刀刃用，只接架构决策/安全敏感 ticket"
-    },
-    {
-      "id": "pi",
-      "display_name": "Pi",
-      "role": "general implementation",
-      "cost_tier": "medium",
+      "id": "codex-gpt",
+      "display_name": "Codex / GPT",
+      "harness": "codex",
+      "model": "gpt",
+      "host": "local",
+      "strength": "high",
+      "speed": "slow",
       "tags": [
-        "crud",
-        "service-layer",
-        "api-endpoint",
-        "scaffold",
-        "config",
-        "migration",
-        "verify",
-        "research",
-        "frontend-impl"
+        "architecture",
+        "security",
+        "debugging",
+        "refactor",
+        "backend"
       ],
-      "description": "覆盖最广的通用实现，也接验证与调研"
+      "description": "本机最强的一个，用于架构决策、疑难 bug 和安全敏感任务"
     },
     {
-      "id": "antigravity",
-      "display_name": "Google Antigravity",
-      "role": "frontend",
-      "cost_tier": "medium",
-      "tags": ["frontend-design", "frontend-impl", "ui", "interaction", "styling"],
-      "description": "前端/交互，UI 组件、动画、样式"
+      "id": "claude-domestic",
+      "display_name": "Claude / 国模",
+      "harness": "claude",
+      "model": "deepseek 等国模",
+      "host": "local",
+      "strength": "medium",
+      "speed": "fast",
+      "tags": [
+        "backend",
+        "frontend",
+        "test",
+        "docs",
+        "refactor"
+      ],
+      "description": "本机主力，响应快，覆盖常规实现、测试和文档"
+    },
+    {
+      "id": "oh-my-pi-gpt",
+      "display_name": "oh-my-pi / GPT",
+      "harness": "oh-my-pi",
+      "model": "gpt",
+      "host": "server",
+      "strength": "medium",
+      "speed": "medium",
+      "tags": [
+        "backend",
+        "refactor",
+        "test",
+        "docs"
+      ],
+      "description": "服务器上的常规实现 agent"
+    },
+    {
+      "id": "antigravity-gemini",
+      "display_name": "Antigravity / Gemini",
+      "harness": "antigravity",
+      "model": "gemini",
+      "host": "server",
+      "strength": "medium",
+      "speed": "fast",
+      "tags": [
+        "frontend",
+        "frontend-design",
+        "ui",
+        "styling",
+        "interaction"
+      ],
+      "description": "服务器上的前端主力，响应快，前端能力强"
     }
   ]
 }
